@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        viewModel.getPerfil(1);
+        viewModel.getPerfil();
 
         viewModel.getItemProfile().observe(this, itemLista -> {
             adapter.atualizaItem(itemLista);

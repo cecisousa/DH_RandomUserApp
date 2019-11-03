@@ -8,7 +8,7 @@ import static com.example.dh_randomuserapp.data.remote.RetrofitService.getApiSer
 
 public class ProfileRepository {
 
-    public Observable<Profile> getProfile(Integer number){
-        return getApiService().getAllProfiles(number);
+    public Observable<Profile> getProfile(){
+        return getApiService().getAllProfiles();
     }
 }

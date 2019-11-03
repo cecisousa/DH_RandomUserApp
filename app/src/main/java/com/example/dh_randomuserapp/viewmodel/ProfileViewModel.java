@@ -31,9 +31,9 @@ public class ProfileViewModel extends AndroidViewModel {
         return this.itemProfile;
     }
 
-    public void getPerfil(Integer number) {
+    public void getPerfil() {
         disposable.add(
-                repository.getProfile(number)
+                repository.getProfile()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(profile -> {
